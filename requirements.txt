@@ -5,6 +5,7 @@ jupyter
 numpy
 matplotlib
 plotly
+sckit-learn
 seaborn
 shapely
 scipy
