@@ -364,20 +364,21 @@ def download(url):
         print("Downloaded " + local)
 
 
-def read_gss(dict_file="GSS.dct", data_file="GSS.dat.gz"):
+def read_gss(dict_file="GSS.dct", data_file="GSS.dat.gz", skip_downloads=False):
     from statadict import parse_stata_dict
 
-    download(
-        "https://github.com/AllenDowney/"
-        + "ElementsOfDataScience/raw/master/data/"
-        + dict_file
-    )
+    if not skip_downloads:
+        download(
+            "https://github.com/AllenDowney/"
+            + "ElementsOfDataScience/raw/master/data/"
+            + dict_file
+        )
 
-    download(
-        "https://github.com/AllenDowney/"
-        + "ElementsOfDataScience/raw/master/data/"
-        + data_file
-    )
+        download(
+            "https://github.com/AllenDowney/"
+            + "ElementsOfDataScience/raw/master/data/"
+            + data_file
+        )
 
     stata_dict = parse_stata_dict(dict_file)
     fp = gzip.open(data_file)
