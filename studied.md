@@ -26,11 +26,11 @@ This documents contains the list of noteboks and chapters I already studied or a
 - [x] odds
 - [x] correlation
 - [x] correlation2
-- [] correlation3
-- [] resampling
-- [] resample_logit
-- [] vaccine
-- [] happiness
+- [x] correlation3
+- [x] resampling
+- [x] resample_logit
+- [x] happiness
+- [x] vaccine
 
 ## Ignore
 I will skip the notebooks, chapters and examples not listed in this document.
