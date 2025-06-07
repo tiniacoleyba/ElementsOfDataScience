@@ -5,9 +5,11 @@ jupyter
 numpy
 matplotlib
 plotly
+pqdm
 sckit-learn
 seaborn
 shapely
 scipy
 statsmodels
 tables
+xlrd
